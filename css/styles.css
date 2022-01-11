@@ -146,6 +146,14 @@ img {
 /*------Секция основного материала--*/
 .section-background-color {
   background-color: var(--footer-main-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-container {
@@ -260,7 +268,7 @@ img {
 }
 .team-paddings {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 .team-img {
   display: block;
@@ -281,11 +289,26 @@ img {
   color: var(--main-name-text-color);
   margin-bottom: 10px;
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: teal
+  border-radius: 50%;
+  
+}
 .proffesin-section {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
+  margin-bottom: 16px;
 }
 
 /*-----------Секция футера-----------*/
