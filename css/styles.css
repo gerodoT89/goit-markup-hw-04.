@@ -292,25 +292,28 @@ img {
 .team-social-list {
   display: flex;
   justify-content: center;
-}
-.team-social-item + .team-social-item {
-  margin-left: 10px;
-}
-.team-social-link {
-  width: 44px;
-  height: 44px;
-  background-color: teal
-  border-radius: 50%;
+  margin-top: 16px;
   
 }
+.team-social-item {
+  margin-right: 10px;
+}
+.team-social-link {
+ }
 .proffesin-section {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
-  margin-bottom: 16px;
+  
 }
-
+.team-social-icons {
+   width: 44px;
+  height: 44px;
+  background-color: teal
+  border-radius: 50%;
+  
+}
 /*-----------Секция футера-----------*/
 .footer-paddings {
   padding-bottom: 60px;
