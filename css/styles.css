@@ -131,12 +131,17 @@ img {
 .header-mail-contacts .header-contacts:not(:last-child) {
   margin-right: 50px;
 }
-.header-contacts {
+.header-contacts,
+.header-tell {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-text-color);
+}
+
+.icon-malito {
+  fill: solid #757575;
 }
 .header-tell {
   letter-spacing: 0.02em;
@@ -226,6 +231,27 @@ img {
 .section-main-material {
   display: flex;
 }
+.list-about::before {
+  display: block;
+  height: 120px;
+  content: "";
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-grafik::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.icon-cosmic::before {
+  background-image: url(../images/astronaut.svg);
+}
 .img-occupation {
   display: flex;
   max-width: 100%;
@@ -304,9 +330,16 @@ img {
   height: 44px;
   background-color: #ffffff;
   display: flex;
+  border-radius: 50%;
   justify-content: center;
   align-content: center;
   margin-top: 16px;
+}
+.team-social-link:hover {
+  background-color: #2196f3;
+}
+.team-social-icons:focus {
+  color: #ffffff;
 }
 .proffesin-section {
   font-size: 16px;
@@ -319,6 +352,11 @@ img {
   content: "";
   background-repeat: no-repeat;
   margin-top: 12px;
+  cursor: pointer;
+}
+.team-social-icons:hover,
+.team-social-icons:focus {
+  fill: #ffffff;
 }
 /*-----------Секция футера-----------*/
 .footer-paddings {
