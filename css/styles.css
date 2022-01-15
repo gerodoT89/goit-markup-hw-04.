@@ -473,11 +473,8 @@ img {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-right: 10px;
 }
-.right-footer-list:last-child {
-  margin-right: 0px;
-}
+
 .right-footer-item {
 }
 .right-footer-link {
@@ -489,6 +486,10 @@ img {
   justify-content: center;
   align-content: center;
   margin-top: 20px;
+  margin-right: 10px;
+}
+.right-footer-link:not:last-child {
+  margin-right: 10px;
 }
 .right-footer-icons {
   fill: #ffffff;
