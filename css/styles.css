@@ -307,11 +307,9 @@ img {
   padding-bottom: 30px;
 }
 .team-cards-shadow {
-  filter: drop-shadow(
-    1px 0 2px rgba(0, 0, 0, 0.2),
-    1px 0 1px rgba(0, 0, 0, 0.14),
-    3px 0 1px rgba(0, 0, 0, 0.12)
-  );
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
@@ -375,6 +373,8 @@ img {
   margin-top: 12px;
   cursor: pointer;
 }
+.team-social-link:hover,
+.team-social-link:focus,
 .team-social-icons:hover,
 .team-social-icons:focus {
   fill: #ffffff;
@@ -572,6 +572,11 @@ img {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
 }
+.portfolio-image:hover,
+.portfolio-image:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .list-text-decor {
   text-decoration: none;
 }
@@ -616,6 +621,7 @@ img {
   background-color: #188ce8;
   color: var(--main-batton-address-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-text-color {
   color: #2196f3;
