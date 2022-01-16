@@ -30,12 +30,18 @@
                     </ul>
             </nav>
                 <ul class="header-mail-contacts">
-                    <li><a class="header-contacts" href="mailto:info@devstudio.com" title="info@devstudio.com">info@devstudio.com
-
-                    </a>
+                    <li><a href="mailto:info@devstudio.com" class="header-contacts icons-header">
+                        <svg class="tell-svg" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope-hover"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
-                    
-                    <li><a class="header-tell" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a href="tel:+380961111111" class="header-tell icons-header">
+                        <svg class="tell-svg" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -89,7 +95,7 @@
             <div class="container">
             <h2 class="occupation-team-sections"><span class="invisible-title">Наша команда</span></h2>
             <ul class="team-block-section list">
-                <li class="team-img"><img src="./images/IgorDemianenko.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                <li class="team-img team-cards-shadow"><img src="./images/IgorDemianenko.jpg" alt="Игорь Демьяненко" width="270" height="260" />
                     <div class="team-paddings">
                     <h3 class="team-name-section">Игорь Демьяненко</h3>
                     <p class="proffesin-section">Product Designer</p>
@@ -145,7 +151,7 @@
                     </ul>
                 </div>  
                 </li>
-                <li class="team-img"><img src="./images/OlgaRepina.jpg" alt="Ольга Репина" width="270" height="260" />
+                <li class="team-img team-cards-shadow"><img src="./images/OlgaRepina.jpg" alt="Ольга Репина" width="270" height="260" />
                     <div class="team-paddings">
                     <h3 class="team-name-section">Ольга Репина</h3>
                     <p class="proffesin-section">Frontend Developer</p>
@@ -181,7 +187,7 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team-img"><img src="./images/NicolaiTarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
+                <li class="team-img team-cards-shadow"><img src="./images/NicolaiTarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
                     <div class="team-paddings">
                     <h3 class="team-name-section">Николай Тарасов</h3>
                     <p class="proffesin-section">Marketing</p>
@@ -217,7 +223,7 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team-img"><img src="./images/Michael.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                <li class="team-img team-cards-shadow"><img src="./images/Michael.jpg" alt="Михаил Ермаков" width="270" height="260" />
                     <div class="team-paddings"> 
                     <h3 class="team-name-section">Михаил Ермаков</h3>
                     <p class="proffesin-section">UI Designer</p>
@@ -310,9 +316,10 @@
     </main>
     <footer class="footer-paddings">
         <div class="container">
-        <div class="footer-menu-logo">
-        <a class="studio-footer" href="index.html"> <span class="web">Web</span>Studio</a>
-           <address>
+            <div class="all-footer-menu">
+            <div class="footer-menu-logo">
+            <a class="studio-footer" href="index.html"> <span class="web">Web</span>Studio</a>
+            <address>
                 <ul class="list">
                     <li class="footer-section-li"><a class="footer-address-section" href="https://www.google.com/maps/d/viewer?msa=0&mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732223110121%2C30.538093590064918&z=17"
                         target="blanc" rel="noopener noreferre">
@@ -321,19 +328,26 @@
                     <li><a class="footer-tell-section" href="tel:+380991111111" title="+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
-        <div class="right-footer-container">
-            <b class="right-footer-title">Присоединяйтесь</b>
+            </div>
+            <div class="right-footer-container">
+            <h3 class="right-footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
             <ul class="right-footer-list list">
                 <li class="right-footer-item">
-        <a href="" class="right-footer-link">
+            <a href="" class="right-footer-link">
             <svg class="right-footer-icons" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram2"></use>
             </svg>
-        </a>
+            </a>
                 </li>
                 <li class="right-footer-item">
-        <a href="" class="right-footer-link">
+            <a href="" class="right-footer-link twiter-background">
+            <svg class="right-footer-icons" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+            </a>
+                </li>
+                <li class="right-footer-item">
+            <a href="" class="right-footer-link">
             <svg class="right-footer-icons" width="20" height="20">
                 <use href="./images/icons.svg#icon-twiter"></use>
             </svg>
@@ -342,21 +356,13 @@
                 <li class="right-footer-item">
         <a href="" class="right-footer-link">
             <svg class="right-footer-icons" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-        </a>
-                </li>
-                <li class="right-footer-item">
-        <a href="" class="right-footer-link">
-            <svg class="right-footer-icons" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
-        </a>
+            </a>
                 </li>
-        
-            </ul>
-        
-        </div>
+             </ul>
+            </div>
+            </div>
         </div>  
     </footer>
 </body>
