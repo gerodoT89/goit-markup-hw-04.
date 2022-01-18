@@ -86,13 +86,15 @@ img {
   border: 1px solid #ececec;
 }
 .social-link:hover,
-.social-link:focus,
-.header-contacts:hover,
-.header-contacts:focus,
-.header-tell:hover,
-.header-tell:focus {
+.social-link:focus {
   color: var(--accent-color);
 }
+.header-contacts:hover,
+.header-contacts:focus {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .header-name-list {
   font-weight: 500;
   line-height: 1.14;
@@ -121,6 +123,7 @@ img {
 .header-mail-contacts {
   list-style: none;
   display: flex;
+  align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
   margin-left: auto;
@@ -143,18 +146,17 @@ img {
   margin-right: 10px;
   align-items: center;
 }
-
+.head-icon-sections {
+  display: flex;
+  align-items: center;
+}
 .icons-header {
   fill: currentColor;
 }
 .icon-malito {
   fill: solid #757575;
 }
-.header-tell {
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  text-decoration: none;
-}
+
 /*------Секция основного материала--*/
 .section-background-color {
   background-color: var(--footer-main-background-color);
@@ -288,9 +290,7 @@ img {
 .background-color-team {
   background-color: var(--background-text-button-color);
 }
-.invisible-title {
-  display: none;
-}
+
 .occupation-team-sections {
   font-weight: 700;
   font-size: 36px;
@@ -351,15 +351,7 @@ img {
   align-content: center;
   margin-top: 16px;
 }
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-.team-social-icons:hover,
-.team-social-icons:focus {
-  color: #ffffff;
-}
+
 .proffesin-section {
   font-size: 16px;
   line-height: 1.18;
@@ -373,10 +365,13 @@ img {
   margin-top: 12px;
   cursor: pointer;
 }
+/* ховер секции соц. сетей команды */
 .team-social-link:hover,
-.team-social-link:focus,
-.team-social-icons:hover,
-.team-social-icons:focus {
+.team-social-link:focus {
+  background-color: #2196f3;
+}
+.team-social-link:hover .team-social-icons,
+.team-social-link:focus .team-social-icons {
   fill: #ffffff;
 }
 /* Секция постоянных клиентов */
@@ -406,12 +401,14 @@ img {
 .clients-item:last-child {
   margin-right: 0px;
 }
+
 .clients-item:hover,
-.clients-item:focus,
-.clients-link:hover,
-.clients-link:focus {
-  fill: #2196f3;
+.clients-item:focus {
   border-color: #2196f3;
+}
+.clients-item:hover .icon-clients,
+.clients-item:focus .icon-clients {
+  fill: #2196f3;
 }
 .client-list {
   display: flex;
@@ -483,12 +480,6 @@ img {
   align-items: baseline;
 }
 .right-footer-container {
-  justify-content: center;
-  text-align: center;
-  width: 206px;
-  height: 80px;
-  top: 2751px;
-  left: 516px;
   margin-left: 70px;
 }
 .right-footer-title {
@@ -532,9 +523,7 @@ img {
 .right-footer-link:focus {
   background-color: #2196f3;
 }
-.twiter-background {
-  background-color: #2196f3;
-}
+
 /*--Оформление основного материала Портфолио--*/
 .portfolio-name-content {
   font-weight: 700;
@@ -551,7 +540,6 @@ img {
   flex-wrap: wrap;
 }
 .portfolio-image {
-  display: block;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -572,13 +560,18 @@ img {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
 }
-.portfolio-image:hover,
-.portfolio-image:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* .portfolio-image:hover, */
+/* .portfolio-image:focus { */
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+/* } */
+.list-text-decor:hover,
+.list-text-decor:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .list-text-decor {
   text-decoration: none;
+  display: block;
 }
 .portfolio-text-section {
   font-size: 16px;
@@ -608,6 +601,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   padding: 6px 20px;
   background: var(--background-text-button-color);
 }
